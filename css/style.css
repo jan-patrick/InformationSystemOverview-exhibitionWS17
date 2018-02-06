@@ -1,0 +1,168 @@
+@font-face { font-family: 'Source Sans Pro';
+    src: url('../font/SourceSansPro-Regular.ttf') format('truetype'); 
+}
+
+html{
+    font-family: "Source Sans Pro", sans-serif;
+    background: #ffffff;
+} 
+p{
+    font-size: 2rem;
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    -webkit-transition: 0.5s;
+    -moz-transition:0.5s;
+    transition: 0.5s;
+}
+video {
+    height: 70%;
+    width: auto;
+    text-align: left;
+}
+a:hover{
+    -webkit-transition: 0.5s;
+    -moz-transition:0.5s;
+    transition: 0.5s;
+    color: #000000;
+} 
+#wrapper {
+    height: 1080px;
+    width: 1920px;
+    margin:auto;
+    z-index: -1;
+}
+#inhalt{
+    z-index: 0;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    align-self: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+}
+#erstes{
+    position: fixed;
+    left: 25%;
+    top: 10%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#erstes:hover{
+    transform: scale(1.1);
+}
+#zweites{
+    position: fixed;
+    left: 43%;
+    top: 10%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#zweites:hover{
+    transform: scale(1.1);
+}
+#drittes{
+    position: fixed;
+    left: 62%;
+    top: 10%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#drittes:hover{
+    transform: scale(1.1);
+}
+#drittes{
+    position: fixed;
+    left: 62%;
+    top: 10%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#drittes:hover{
+    transform: scale(1.1);
+}
+#viertes{
+    position: fixed;
+    left: 25%;
+    top: 40%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#viertes:hover{
+    transform: scale(1.1);
+}
+#fünftes{
+    position: fixed;
+    left: 43%;
+    top: 40%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#fünftes:hover{
+    transform: scale(1.1);
+}
+#sechstes{
+    position: fixed;
+    left: 62%;
+    top: 40%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#sechstes:hover{
+    transform: scale(1.1);
+}
+#siebtes{
+    position: fixed;
+    left: 25%;
+    top: 70%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#siebtes:hover{
+    transform: scale(1.1);
+}
+#achtes{
+    position: fixed;
+    left: 43%;
+    top: 70%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#achtes:hover{
+    transform: scale(1.1);
+}
+#neuntes{
+    position: fixed;
+    left: 62%;
+    top: 70%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+#neuntes:hover{
+    transform: scale(1.1);
+}
+#zurueck{
+    position: fixed;
+    left: 5%;
+    bottom: 2%;
+    z-index: 1;
+}
+#vor{
+    position: fixed;
+    right: 5%;
+    bottom: 2%;
+    z-index: 1;
+}
