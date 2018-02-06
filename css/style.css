@@ -157,12 +157,12 @@ a:hover{
 #zurueck{
     position: fixed;
     left: 5%;
-    bottom: 2%;
+    top: 2%;
     z-index: 1;
 }
 #vor{
     position: fixed;
     right: 5%;
-    bottom: 2%;
+    top: 2%;
     z-index: 1;
 }

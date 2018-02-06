@@ -1,4 +1,7 @@
 
+// for resizing
+var zoom = 100;
+
 // length in milliseconds
 var length_waehrungen = 4000;
 var length_kaffee = 11000;
@@ -28,9 +31,15 @@ function setVariables(){
             usedPath=side2;
             console.log("done");
             break;
+        case "2.html":
+            usedLength=length_waehrungen;
+            usedPath=side1;
+            console.log("done");
+            break;
         default:
             console.log("Error!");
             break;
+    resizeScreen();        
     setTimeout();
     }
 }
@@ -40,3 +49,15 @@ setTimeout(function(){
         console.log(usedPath);
         window.open(usedPath, null , null, true);
 },usedLength);
+
+function resizeScreen() {
+    var c = window.innerWidth / 1920;
+    zoom = c * 100;
+    if (zoom <= 20) {
+        zoom = 20;
+    } else if (zoom >= 200) {
+        zoom = 200;
+    }
+    var n = "" + zoom;
+    document.body.style.zoom = n += "%";
+}
