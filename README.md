@@ -1,7 +1,3 @@
-# InformationSystemOverview-exhibitionWS17
-App overview created in Typographie in WS 17/18 at HfG Schwäbisch Gmünd with Prof. Daniel Utz
-
-
 <h1 align="center">information system overview for semester exhibition ws17/18 at HfG Gmuend</h1>
 <br>
 <br>
