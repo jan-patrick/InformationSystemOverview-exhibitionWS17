@@ -1,20 +1,42 @@
-var time;
-var timeOnSite = 0;
-var length_waehrungen = 2;
-var length_kaffee = 110;
 
-window.onload = onReady;
+// length in milliseconds
+var length_waehrungen = 4000;
+var length_kaffee = 11000;
 
-function onReady() {
-    timeOnSite = Date();
-    loop();
-}    
+// paths
+var side2 = "../html/2.html";
+var side3 = "../html/3.html";
+var side4 = "../html/4.html";
+var side5 = "../html/5.html";
+var side6 = "../html/6.html";
+var side1 = "../html/1.html";
 
-function loop() {
-        if(timeOnSite - Date() <= length_waehrungen){
-            window.location.open('../html/1.html');
-            console.log("next site");
-        }else{
-            console.log("nope");
-        }
-}  
+// used length + path
+var usedLength = length_waehrungen;
+var usedPath = side1;
+
+var path = window.location.pathname;
+var page = path.split("/").pop();
+console.log( page );
+
+window.onload = setVariables;
+
+function setVariables(){
+    switch(page){
+        case "1.html":
+            usedLength=length_waehrungen;
+            usedPath=side2;
+            console.log("done");
+            break;
+        default:
+            console.log("Error!");
+            break;
+    setTimeout();
+    }
+}
+
+setTimeout(function(){
+        console.log(usedLength);
+        console.log(usedPath);
+        window.open(usedPath, null , null, true);
+},usedLength);
