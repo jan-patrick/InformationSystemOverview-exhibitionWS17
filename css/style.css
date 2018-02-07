@@ -51,7 +51,7 @@ a:hover{
 
 /* akkordeon ************************/
 .akkordeon {
-    width: 20em;
+    width: 40em;
     padding: 0.2em; 
     background: #fff;
     border: none;
@@ -69,8 +69,8 @@ a:hover{
     line-height: 2rem;
 }
 .akkordeon label:hover{
-    background: #000;
-    color: #fff;
+    background: rgb(211, 211, 211);
+    color: #000;
 }
 .akkordeon input + label {
     transition: all 0.5s ease-in-out;
@@ -78,17 +78,21 @@ a:hover{
 .akkordeon input:checked + label,
 .akkordeon input:checked + label:hover{
     background: #fff;
+    color: #000;
+    zoom: 1.1;
 }
 .akkordeon input{
-      display: none;
+    display: none;
 }
 .akkordeon p {
     overflow: hidden;
     height: 0;
     margin: 0;
+    margin-left: 1.9em;
     transition: all 0.5s ease-in-out;
 }
 .akkordeon input:checked ~ p{
     transition: all 0.5s ease-in-out;
     height: 2em;
+    margin-left: 1.9em;
 }
