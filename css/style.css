@@ -7,8 +7,8 @@ html{
     background: #ffffff;
 } 
 p{
-    font-size: 2rem;
-    line-height: 1.4rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
 }
 a{
     text-decoration: none;
@@ -18,7 +18,7 @@ a{
     transition: 0.5s;
 }
 video {
-    height: 70%;
+    height: 90%;
     width: auto;
     text-align: left;
 }
@@ -34,135 +34,61 @@ a:hover{
     margin:auto;
     z-index: -1;
 }
-#inhalt{
-    z-index: 0;
-    width: 30%;
+#app-overview {
     height: 100%;
+    width: 45%;
     position: fixed;
-    align-self: center;
-    margin-left: 35%;
-    margin-right: 35%;
-    text-align: center;
-}
-#erstes{
-    position: fixed;
-    left: 25%;
-    top: 10%;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-#erstes:hover{
-    transform: scale(1.1);
-}
-#zweites{
-    position: fixed;
-    left: 43%;
-    top: 10%;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-#zweites:hover{
-    transform: scale(1.1);
-}
-#drittes{
-    position: fixed;
-    left: 62%;
-    top: 10%;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-#drittes:hover{
-    transform: scale(1.1);
-}
-#drittes{
-    position: fixed;
-    left: 62%;
-    top: 10%;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-#drittes:hover{
-    transform: scale(1.1);
-}
-#viertes{
-    position: fixed;
-    left: 25%;
-    top: 40%;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-#viertes:hover{
-    transform: scale(1.1);
-}
-#fünftes{
-    position: fixed;
-    left: 43%;
-    top: 40%;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-#fünftes:hover{
-    transform: scale(1.1);
-}
-#sechstes{
-    position: fixed;
-    left: 62%;
-    top: 40%;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-#sechstes:hover{
-    transform: scale(1.1);
-}
-#siebtes{
-    position: fixed;
-    left: 25%;
-    top: 70%;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-#siebtes:hover{
-    transform: scale(1.1);
-}
-#achtes{
-    position: fixed;
-    left: 43%;
-    top: 70%;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-#achtes:hover{
-    transform: scale(1.1);
-}
-#neuntes{
-    position: fixed;
-    left: 62%;
-    top: 70%;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-#neuntes:hover{
-    transform: scale(1.1);
-}
-#zurueck{
-    position: fixed;
+    top: 5%;
     left: 5%;
-    top: 2%;
-    z-index: 1;
 }
-#vor{
+#video-overview {
+    height: 100%;
+    width: 45%;
     position: fixed;
+    top: 5%;
     right: 5%;
-    top: 2%;
-    z-index: 1;
+}
+
+/* akkordeon ************************/
+.akkordeon {
+    width: 20em;
+    padding: 0.2em; 
+    background: #fff;
+    border: none;
+}
+.akkordeon label{
+    padding: 0.2em 1em;
+    margin-bottom: 0.2em;
+    position: relative;
+    display: block;
+    height: 1.7em;
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+.akkordeon label:hover{
+    background: #000;
+    color: #fff;
+}
+.akkordeon input + label {
+    transition: all 0.5s ease-in-out;
+}
+.akkordeon input:checked + label,
+.akkordeon input:checked + label:hover{
+    background: #fff;
+}
+.akkordeon input{
+      display: none;
+}
+.akkordeon p {
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+.akkordeon input:checked ~ p{
+    transition: all 0.5s ease-in-out;
+    height: 2em;
 }

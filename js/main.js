@@ -28,7 +28,7 @@ function setVariables(){
     switch(page){
         case "1.html":
             usedLength=length_waehrungen;
-            usedPath=side2;
+            usedPath=side1;
             console.log("done");
             break;
         case "2.html":
