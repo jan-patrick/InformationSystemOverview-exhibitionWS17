@@ -84,14 +84,21 @@ function setVariables(a){
     video.load();      
     resizeScreen(); 
     timeOutFunction;
-    //if(a!=b)window.clearTimeout(timeOutFunction); 
-    //b = a;
+    
+    b = a;
+}
+function clearIt(a){
+    a = a;
+    window.clearInterval(timeOutFunction); 
+    setVariables(a);
 }
 
-timeOutFunction = setTimeout(function(){
+timeOutFunction = setInterval(function(){
         console.log(useLength);
         console.log(usePath);
-        setVariables(a+1);
+        var video = document.getElementById('video');
+        video.reload();
+        video.play();
 },useLength);
 
 function checkTheCheckboxes(c) {
