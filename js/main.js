@@ -2,19 +2,17 @@
 var zoom = 100;
 
 var a = 1;
-var b = 0;
-var timeOutFunction;
 
 // length in milliseconds
-var length_waehrungen = 67000;
-var length_kaffee = 63000;
-var length_essen = 40000; // 40000
-var length_basteln = 83000; // 830000
-var length_moderne = 27000;
-var length_sneaker = 62000;
-var length_kreauter = 39000;
-var length_medizin = 69000;
-var length_portfolio = 70000;
+var length_waehrungen = 66000;  // 67
+var length_kaffee = 62000;      // 63
+var length_essen = 39000;       // 40
+var length_basteln = 82000;     // 83
+var length_moderne = 26000;     // 27
+var length_sneaker = 61000;     // 62
+var length_kreauter = 38000;    // 39
+var length_medizin = 68000;     // 69
+var length_portfolio = 69000;   // 70
 
 // paths
 var path1 = "../../videos/essen_irma_phone.mp4";
@@ -28,7 +26,7 @@ var path8 = "../../videos/sneaker_stefan_phone.mp4";
 var path9 = "../../videos/waehrungen_jan_phone.mp4";
 
 // used length + path
-var useLength = length_essen;
+var useLength = length_moderne;
 var usePath = path1;
 
 window.onload = setVariables;
@@ -83,23 +81,8 @@ function setVariables(a){
     video.setAttribute("src", usePath);  
     video.load();      
     resizeScreen(); 
-    timeOutFunction;
-    
-    b = a;
+    document.getElementById('video').loop = true;
 }
-function clearIt(a){
-    a = a;
-    window.clearInterval(timeOutFunction); 
-    setVariables(a);
-}
-
-timeOutFunction = setInterval(function(){
-        console.log(useLength);
-        console.log(usePath);
-        var video = document.getElementById('video');
-        video.reload();
-        video.play();
-},useLength);
 
 function checkTheCheckboxes(c) {
     switch(c){
