@@ -46,7 +46,7 @@ a:hover{
     width: 45%;
     position: fixed;
     top: 5%;
-    right: 4%;
+    right: 1%; /* 4 */
 }
 
 /* akkordeon ************************/
